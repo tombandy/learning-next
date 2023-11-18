@@ -1,6 +1,7 @@
 import "../styles/global.css"
 import Link from 'next/link'
 import {useRouter} from 'next/router'
+import Footer from "../components/Footer"
 
 export default function App({Component, pageProps}) {
     const router = useRouter()
@@ -18,7 +19,7 @@ export default function App({Component, pageProps}) {
         </div>
         <p>Header</p>
         <Component {...pageProps} />
-        <p>footer</p>
+        <Footer />
         </>
     )
 }
